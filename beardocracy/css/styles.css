@@ -1,0 +1,196 @@
+body{
+	background: url(beard.jpg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  
+}
+
+.ss-form-container{
+	width: 99%;
+	margin:auto;
+}
+@media(min-width: 1024px){
+	.ss-form-container{
+		width:960px;
+		margin:auto;
+	}
+}
+
+.disclaimer {
+	color: #777;
+	font: normal 11px arial,sans-serif;
+	margin-top: 11px;
+}
+.powered-by-logo {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.ss-terms {
+	display: inline-block;
+	line-height: 20px;
+	width: 80%;
+	text-align: center;
+}
+.ss-logo-link {
+	display: block;
+}
+.powered-by-text {
+	line-height: 16px;
+}
+.main-image{
+	max-width: 100%;
+}
+.block-container{
+	background:#fff;
+	padding:32px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-bottom:40px;
+	-webkit-box-shadow: 3px 3px 30px rgba(50, 50, 50, 0.86);
+	-moz-box-shadow:    3px 3px 30px rgba(50, 50, 50, 0.86);
+	box-shadow:         3px 3px 30px rgba(50, 50, 50, 0.86);
+}
+.hint{
+	font-size:21px;
+	font-family: 'Special Elite', cursive;
+}
+.ss-q-item-label{
+	font-size:31px;
+	font-family: 'Special Elite', cursive;
+}
+.ss-q-short{
+	font-size:24px;
+	width:550px;
+	color:#444;
+	padding:0 10px;
+	max-width: 90%;	
+}
+.ss-q-help{
+	color:#444;
+}
+.ss-choices{
+	list-style:none;
+	padding:0;
+	margin:auto;
+	text-align:center;
+}
+.ss-choice-item{
+	width:30%;
+	margin:1%;
+	display:inline-block;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	border:3px solid #fff;
+	-moz-transition: all 500ms;
+	-webkit-transition: all 500ms;
+	-o-transition: all 500ms;
+	transition: all 500ms;
+}
+.ss-choice-item:hover{
+	cursor:pointer;
+	border:3px solid #AAA;
+}
+.ss-choice-item.active{
+	border:3px solid #666;
+}
+.ss-choice-item.active:hover{
+	border:3px solid #666;
+}
+.ss-choice-item input{
+	position:absolute;
+	left:-100em;
+}
+.ss-choice-label img:hover{
+	cursor:pointer;
+}
+.ss-choice-label img{
+	width:100%;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+@media(max-width: 470px) {
+	.ss-choice-item{
+		width:95%;
+	}
+}
+@media(max-width: 800px) and (min-width: 470px){
+	.ss-choice-item{
+		width:45%;
+	}
+}
+.error-dialog{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.8);
+	top:0;
+	left:0;
+}
+.error-dialog .content{
+	box-sizing: border-box;
+	position:relative;
+	top:30%;
+	font-size:25px;
+	font-family: 'Special Elite', cursive;
+	width:600px;
+	margin:auto;
+	color:#fff;
+}
+.error-dialog .close{
+	text-decoration:underline;
+	
+}
+.error-dialog .close:hover{
+	cursor:pointer;
+}
+@media (max-width: 620px){
+	.error-dialog .content{
+		width: 100%;
+		padding: 0 25px;
+		font-size:20px;
+	}
+
+}
+.btn{
+	display: block;
+	text-align: center;
+	font-family: 'Oswald',sans-serif;
+	text-shadow: 0 1px 0 rgba(109, 5, 5, 0.8);
+	color: #ffffff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+	width: 305px;padding: 17px 10px 10px 10px;font-size:24px;
+	outline:none;
+	margin:30px auto;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+.btn:hover{
+	cursor:pointer;
+}
+.btn:active{
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.1);outline: 0 none;
+}
+
+.green{border:1px solid #4E612B;
+background: #A3CF59;
+background: -webkit-gradient(linear, left top, left bottom, from(#A3CF59), to(#93BC45));
+background: -moz-linear-gradient(top, #A3CF59,  #93BC45);
+background: linear-gradient(#A3CF59, #93BC45);
+}
+.green:hover, .green:active{
+text-decoration:none;
+border-color: #8DAF4B;
+background: #C3DC78;
+background: -webkit-gradient(linear, left top, left bottom, from(#C3DC78), to(#A3CF59));
+background: -moz-linear-gradient(top, #C3DC78,  #A3CF59);
+background: linear-gradient(#C3DC78, #A3CF59);}
