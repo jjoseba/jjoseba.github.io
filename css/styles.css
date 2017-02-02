@@ -173,6 +173,9 @@ body{
 .header__nav__item > a[data-ref='art']::before {
   content: "\f1fc";
 }
+.header__nav__item > a[data-ref='games']::before {
+  content: "\f11b";
+}
 
 .header__nav__item > a:hover::before,
 .header__nav__item.active > a::before {
@@ -182,7 +185,7 @@ body{
 /* Collapsible Navigation */
 .nav-toggle-wrapper {
 	display: none;
-	height: 2em;
+	background-color: #fff;
 }
 
 .nav-toggle-btn {
@@ -236,6 +239,10 @@ body{
 }
 
 @media (max-width: 768px) {
+
+	.header{
+		padding: 0;
+	}
 	.header__nav {
 		visibility: hidden;
 		opacity: 0;
@@ -253,7 +260,11 @@ body{
 	
 	.nav-toggle-wrapper {
 		display: inline-block;
-		width: 50%;
+		height: 4em;
+		width: 4em;
+		padding: 1em;
+		border-bottom-right-radius: 50%;
+		box-shadow: 0px 2px 3px rgba(0,0,0,0.12);
 		margin-right: -4px;
 	}
 	
@@ -277,6 +288,7 @@ body{
 section{
 	padding-top: 4em;
 	min-height: 100vh;
+	clear: both;
 }
 .projects{
 	margin-top: 2em; 
@@ -351,6 +363,15 @@ section{
 	}
 }
 
+.profile-photo{
+	width: 100%;
+	max-width: 180px;
+	border-radius: 50%;
+	
+	border: solid #fff;
+	border-width: 6px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 5px 9px 0 rgba(0,0,0,0.22), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
 
 #about { 
 	
