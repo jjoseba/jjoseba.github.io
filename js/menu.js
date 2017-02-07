@@ -1,7 +1,7 @@
 $(function(){
   $('body').scrollspy({ target: '#header' });
   $('[data-toggle="tooltip"]').tooltip();
-  
+
   var navToggle = $('.nav-toggle-wrapper');
   navToggle.on('click', '.nav-toggle-btn', function(){
     navToggle.toggleClass('expand');
@@ -19,6 +19,7 @@ $(function(){
   $('.projects article').find('.flip').on('click', function(e){
     e.preventDefault();
     $(this).parents('article').toggleClass('flipped');
+    $(':focus').blur();
   });
 
 });
