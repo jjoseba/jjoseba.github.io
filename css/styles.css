@@ -414,7 +414,16 @@ section{
 	font-size: 50px;
 	line-height: 50px;
 	transition: 400ms all;
+	position: relative;
+	top: -100px;
+	opacity: 0;
+	transition: 500ms all;
+	transition-delay: 200ms;
 }
+.projects article .more .links a:nth-child(2){ transition-delay: 260ms; }
+.projects article .more .links a:nth-child(3){ transition-delay: 320ms; }
+.projects article .more .links a:nth-child(4){ transition-delay: 380ms; }
+.projects article .more .links a:nth-child(5){ transition-delay: 440ms; }
 .projects article .more .links a:hover{
 	color: #000;
 }
@@ -432,6 +441,10 @@ section{
 .projects article.flipped .more {
 	opacity: 1;
   transform: rotateY(0deg);
+}
+.projects article.flipped .more .links a{
+	top:0;
+	opacity: 1;
 }
 .projects article.flipped .hover{
 	opacity: 0;
