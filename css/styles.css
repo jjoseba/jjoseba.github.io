@@ -301,6 +301,9 @@ section{
 	float: left;
 	position: relative;
 }
+.projects article:nth-child(odd){
+	clear: both;
+}
 
 .projects article img{
 	max-width: 100%;
