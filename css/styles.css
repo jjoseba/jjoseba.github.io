@@ -338,8 +338,8 @@ section{
   color:#fff;
   transition:all 400ms;
 }
-.projects article .hover.soon:after{
-  content: "\f017";
+.projects article .hover.external:after{
+  content: "\f08e";
 }
 .projects article:hover .hover{ cursor:pointer; opacity: 1;}
 .projects article:hover .hover:after{ top: 50%;}
