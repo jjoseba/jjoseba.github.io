@@ -95,7 +95,6 @@ body{
 .header {
 	padding: 3em 6% 1em;
 	position: fixed;
-	width: 100%;
 	z-index: 10;
 }
 
@@ -104,6 +103,11 @@ body{
 		padding-left: 6em;
 		padding-right: 6em;
 	} 
+}
+@media (max-width: 768px){
+	.header {
+		width: 100%;
+	}
 }
 
 /* Nav */
