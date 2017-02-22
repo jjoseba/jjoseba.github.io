@@ -16,9 +16,12 @@ $(function(){
       navToggle.removeClass('expand');
   });
 
-  $('.projects article').find('.flip').on('click', function(e){
+  var all = $('.projects article');
+  all.find('.flip').on('click', function(e){
     e.preventDefault();
-    $(this).parents('article').toggleClass('flipped');
+    var article = $(this).parents('article');
+    all.not(article).removeClass('flipped');
+    article.toggleClass('flipped');
     $(':focus').blur();
   });
 
