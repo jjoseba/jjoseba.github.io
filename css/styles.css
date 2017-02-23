@@ -130,7 +130,7 @@ body{
 
 .header__nav__item.active > a {
 	font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  	font-weight: 700;
 }
 
 
@@ -140,24 +140,42 @@ body{
 }
 
 .header__nav__item > a:hover {
-	color: #51e6a6;
+	color:#000;
 }
 
-.header__nav__item > a::before {
-	position: absolute;
-	top: 0;
-	bottom: 0;
+.header__nav__item > a::before, .header__nav__item > a::after {
 	overflow: visible;
-	left: -5em;
-	color: inherit;
 	font: normal normal normal 30px/1 FontAwesome;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.header__nav__item > a::before{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -5em;
+}
+.header__nav__item > a::after{
+	position: fixed;
+	left: -370px;
+	top: 30%;
+	font-size: 320px;
+	transition: all 600ms;
+	opacity: 0;
+	z-index: 0;
+}
+.header__nav__item.active > a::after{
+	left: -70px;
+	opacity: 0.7;
+}
+@media (max-width: 1350px) {
+	.header__nav__item > a::after{
+		font-size: 265px;
+	}
+}
 @media (max-width: 919px) {
-	.header__nav__item > a::before {
+	.header__nav__item > a::before, .header__nav__item > a::after {
 		display: none;
 	}
 }
@@ -166,20 +184,41 @@ body{
   content: "\f2bd";
 }
 
-.header__nav__item > a[data-ref='projects']::before {
+.header__nav__item > a[data-ref='projects']::before, .header__nav__item > a[data-ref='projects']::after {
   content: "\f0ad";
 }
+.header__nav__item.active > a[data-ref='projects']::after, .header__nav__item:hover > a[data-ref='projects'] {
+	color: #51e6a6;
+}
 
-.header__nav__item > a[data-ref='random']::before {
+.header__nav__item > a[data-ref='random']::before, .header__nav__item > a[data-ref='random']::after {
   content: "\f135";
 }
+.header__nav__item.active > a[data-ref='random']::after, .header__nav__item:hover > a[data-ref='random'] {
+	color: #eede6a;
+}
 
-.header__nav__item > a[data-ref='art']::before {
+.header__nav__item > a[data-ref='art']::before, .header__nav__item > a[data-ref='art']::after {
   content: "\f1fc";
 }
-.header__nav__item > a[data-ref='games']::before {
+.header__nav__item.active > a[data-ref='art']::after, .header__nav__item:hover > a[data-ref='art'] {
+	color: #e4379a;
+}
+
+.header__nav__item > a[data-ref='games']::before, .header__nav__item > a[data-ref='games']::after {
   content: "\f11b";
 }
+.header__nav__item.active > a[data-ref='games']::after, .header__nav__item:hover > a[data-ref='games'] {
+	color: #f97763;
+}
+
+.header__nav__item > a[data-ref='contact']::before, .header__nav__item > a[data-ref='contact']::after {
+  content: "\f1d8";
+}
+.header__nav__item.active > a[data-ref='contact']::after, .header__nav__item:hover > a[data-ref='contact'] {
+	color: #4d2970;
+}
+
 
 .header__nav__item > a:hover::before,
 .header__nav__item.active > a::before {
@@ -326,11 +365,11 @@ section{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(81, 230, 166,0.5);
   opacity: 0;
   transition:all 400ms;
   overflow: hidden;
 }
+
 .projects article .hover:after{
   position: absolute;
   top:-10%;
@@ -386,6 +425,7 @@ section{
   transition: all 0.2s;
   perspective: 900px;
   position: relative;
+  z-index: 3;
 }
 
 .projects article .more {
@@ -398,10 +438,22 @@ section{
   backface-visibility: hidden;
   transform-style: preserve3d;
   transition: all 0.4s;
-  background: rgba(81, 230, 166,0.85);
   opacity: 0;
   transform: rotateY(-180deg);
 }
+
+#projects article .hover{ background: rgba(81, 230, 166,0.5); }
+#random article .hover{ background: rgba(238, 222, 106,0.5); }
+#games article .hover{ background: rgba(249, 119, 99,0.5); }
+#art article .hover{ background: rgba(228, 55, 154,0.5); }
+#contact article .hover{ background: rgba(77, 41, 112,0.5); }
+
+
+#projects article .more{ background: rgba(81, 230, 166,0.85); }
+#random article .more{ background: rgba(238, 222, 106,0.85); }
+#games article .more{ background: rgba(249, 119, 99,0.85); }
+#art article .more{ background: rgba(228, 55, 154,0.85); }
+#contact article .more{ background: rgba(77, 41, 112,0.85); }
 
 .projects article .more .close{
   font-size: 50px;
