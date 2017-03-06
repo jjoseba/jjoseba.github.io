@@ -159,7 +159,7 @@ body{
 .header__nav__item > a::after{
 	position: fixed;
 	left: -370px;
-	top: 30%;
+	bottom: 15%;
 	font-size: 320px;
 	transition: all 600ms;
 	opacity: 0;
