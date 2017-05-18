@@ -512,5 +512,43 @@ section{
 #about { 
 	
 }
+.detail .header{ padding: 0; }
+.detail .header .header__nav{
+	width:250px;
+	background-color: #eee;
+	height: 100vh;
+	box-shadow: 5px 0px 14px rgba(0,0,0,0.4);
+	padding: 20px;
+}
+.detail .header .header__nav p{
+	font-size: 1rem;
+	line-height: 1.15rem;
+}
+.detail #main{ padding-left: 265px; }
+.detail .header__nav__item > a{ visibility: hidden; }
+.detail .header__nav__item > a::before{ display: none; }
+.detail .header__nav__item > a::after{visibility: visible; }
 
 /* hover color: #51e6a6; (81, 230, 166) */
+
+
+.mosaicflow__column {
+  float: left;
+}
+.mosaicflow__item{
+	padding: 10px;
+}
+.mosaicflow__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border:5px solid #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 768px) {
+	.detail #main{ padding-left: 15px; }
+
+	.detail .header .header__nav{ width: 100%; }
+
+}
