@@ -562,11 +562,15 @@ section{
 }
 @media (max-width: 768px) {
 	.detail #main{ padding-left: 15px; }
-
+	.mosaicflow__item { padding: 4px; }
+	.mosaicflow__item img { border-width: 4px; }
 	.detail .header .header__nav{ width: 100%; }
 
 }
-
+a.back i{ position: relative; left: 0; transition: 700ms all;}
+a.back{ transition: 700ms all; }
+a.back:hover{ color:#000; }
+a.back:hover i{ left: -5px; }
 .loading{
 	position: fixed;
 	top: 50%;
