@@ -543,9 +543,23 @@ section{
   width: 100%;
   height: auto;
   border:5px solid #fff;
+  position: relative;
   box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  transition: 700ms all;
+  -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
 }
-
+.mosaicflow__item img:hover{
+	-webkit-transform: scale(1.04);
+	box-shadow: 0 11px 24px rgba(0,0,0,0.5);
+	
+}
+.detail .gallery{
+	padding: 1em 0;
+}
 @media (max-width: 768px) {
 	.detail #main{ padding-left: 15px; }
 
