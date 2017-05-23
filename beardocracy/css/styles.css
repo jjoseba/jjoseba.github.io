@@ -6,7 +6,16 @@ body{
 	  background-size: cover;
 	  
 }
+body::-webkit-scrollbar
+{
+	width: 14px;
+	background-color: #aa897b;
+}
 
+body::-webkit-scrollbar-thumb
+{
+	background-color: #683f34;
+}
 .ss-form-container{
 	width: 99%;
 	margin:auto;
