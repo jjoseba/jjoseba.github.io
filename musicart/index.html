@@ -113,6 +113,7 @@
     </div>
   </div>
 </div>
+<div class="loading"><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="../js/menu.js"></script>
@@ -122,6 +123,7 @@
       minColumns: 2,
       minItemWidth: 360
     });
+    $('.gallery').on('mosaicflow-layout', function(){ $('.loading').fadeOut(); });
   </script>
 </body>
 
