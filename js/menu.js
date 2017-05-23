@@ -25,4 +25,9 @@ $(function(){
     $(':focus').blur();
   });
 
+  $('.gallery').mosaicflow({
+    minColumns: 2,
+    minItemWidth: 360
+  }).on('mosaicflow-layout', function(){ $('.loading').fadeOut(); }).find('.swipe').swipebox();;
+
 });
