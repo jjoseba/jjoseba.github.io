@@ -205,7 +205,7 @@
 
 /* Morph Button Style: Overlay */
 .morph-button.morph-button-overlay {
-	margin: 50px auto;
+	margin: 25px auto;
 }
 
 .morph-button-overlay .morph-content {
@@ -286,12 +286,9 @@
 	.morph-button-fixed,
 	.morph-button-fixed .morph-content {
 		width: 200px;
-		height: 80px;
+		height: 200px;
 	}
 
-	.morph-button-fixed > button {
-		font-size: 75%;
-	}
 
 
 }
