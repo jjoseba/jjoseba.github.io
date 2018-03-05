@@ -63,9 +63,11 @@ h1,h2,h3,h4{
 		top:94vh;
 		z-index: -3;
 	}
-
 	.city-dialog .dialog-aside{
 		font-size: 0.9em;
+	}
+
+	.city-dialog .dialog-aside, .city-dialog .dialog-content{
 		padding-left: 30px;
 		padding-right: 30px;
 	}
@@ -177,6 +179,11 @@ h1,h2,h3,h4{
 	font-weight: bold;
 	font-size:1.1em;
 }
+.hotel-list em{
+	font-style: normal;
+	color: #444;
+	font-weight: lighter;
+}
 .badge.badge-primary.badge-pill{
 	background-color: #361f17;
 	color:#efb62f;
@@ -191,4 +198,61 @@ footer{
 }
 footer a, footer a:hover{
 	color:#efb62f;
+}
+
+.navbar-toggler .icon-bar {
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+.navbar-toggler .icon-bar:before, .navbar-toggler .icon-bar:after {
+  position: absolute;
+  content: '';
+}
+.navbar-toggler .icon-bar, .navbar-toggler .icon-bar:before, .navbar-toggler .icon-bar:after {
+  width: 24px;
+  height: 3px;
+  background-color: #efb62f;
+  display: block;
+}
+.navbar-toggler .icon-bar:before {
+  margin-top: -7px;
+  -webkit-transition-property: margin, -webkit-transform;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-delay: .2s, 0;
+  transition-property: margin, transform;
+  transition-duration: .2s;
+  transition-delay: .2s, 0;
+}
+.navbar-toggler .icon-bar:after {
+  margin-top: 7px;
+  -webkit-transition-property: margin, -webkit-transform;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-delay: .2s, 0;
+  transition-property: margin, transform;
+  transition-duration: .2s;
+  transition-delay: .2s, 0;
+}
+.navbar-toggler .icon-bar{
+  -webkit-transition-duration: .2s;
+  -webkit-transition-delay: .2s;
+  transition-duration: .2s;
+  transition-delay: .2s;
+}
+.navbar-toggler:not(.collapsed) .icon-bar {
+  background-color: rgba(0,0,0,0.0);
+}
+.navbar-toggler:not(.collapsed) .icon-bar:before {
+  margin-top: 0;
+  -webkit-transform: rotate(45deg);
+  -webkit-transition-delay: 0, .2s;
+  transform: rotate(45deg);
+  transition-delay: 0, .2s;
+}
+.navbar-toggler:not(.collapsed) .icon-bar:after {
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transition-delay: 0, .2s;
+  transform: rotate(-45deg);
+  transition-delay: 0, .2s;
 }

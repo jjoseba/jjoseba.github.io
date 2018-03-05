@@ -25,8 +25,8 @@
 }
 
 .icon-close {
-	position: absolute;
-	top: 20px;
+	position: fixed;
+	top: 60px;
 	right: 20px;
 }
 
