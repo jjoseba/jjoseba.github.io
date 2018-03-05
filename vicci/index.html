@@ -8,8 +8,8 @@
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/material.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css?v=2" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css?v=2" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 		<script src="js/modernizr.custom.js"></script>
@@ -63,34 +63,55 @@
 					<div class="col-md-4">
 
 				<div class="morph-button morph-button-overlay morph-button-fixed morph-button-rounded">
-					<button type="button" style="background-image:url('img/paris.jpg');"><div>PARIS</div></button>
+					<button type="button" style="background-image:url('img/madrid.jpg');"><div>MADRID</div></button>
 					<div class="morph-content">
-						<div class="bg-overlay" style="background-image:url('img/paris.jpg');"></div>
+						<div class="bg-overlay" style="background-image:url('img/madrid.jpg');"></div>
 						<div>
 							<div class="morph-dialog-content city-dialog">
 								<span class="icon icon-close"><i class="material-icons">close</i></span>
 								<div class="dialog-aside">
-									<div class="img-circle"><img src="img/paris.jpg"></div>
+									<div class="img-circle"><img src="img/madrid.jpg"></div>
 									<h1 class="mb-0">Paris</h1>
 									<img class="mb-3" src="img/byvicci.png">
-									<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+									<p>Madrid es la capital central de España con elegantes bulevares y amplios parques muy cuidados, como el Buen Retiro. Es famosa por sus ricas colecciones de arte europeo, con obras de Goya, Velázquez y otros maestros españoles en el Museo del Prado. El corazón del antiguo Madrid de los Habsburgo es la Plaza Mayor bordeada de pórticos y cerca se encuentra el Palacio Real y la Armería, que exhiben arsenales históricos </p>
 								</div>
 								<div class="dialog-content">
 									<p>Elige tu hotel:</p>
-									<ul class="list-group">
-									  <li class="list-group-item d-flex justify-content-between align-items-center">
-									    Cras justo odio
-									    <span class="badge badge-primary badge-pill">14</span>
-									  </li>
-									  <li class="list-group-item d-flex justify-content-between align-items-center">
-									    Dapibus ac facilisis in
+									<div class="list-group hotel-list">
+
+									  <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									      THE PRINCIPAL MADRID
+									    <span class="badge badge-primary badge-pill">7</span>
+									  </a>
+									  <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									      VILLA MAGNA
 									    <span class="badge badge-primary badge-pill">2</span>
-									  </li>
-									  <li class="list-group-item d-flex justify-content-between align-items-center">
-									    Morbi leo risus
-									    <span class="badge badge-primary badge-pill">1</span>
-									  </li>
-									</ul>
+									  </a>
+									  <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									      URSO Hotel & Spa
+									    <span class="badge badge-primary badge-pill">5</span>
+									  </a>
+
+									  <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									      UNICO MADRID
+									    <span class="badge badge-primary badge-pill">4</span>
+									  </a>
+
+									  <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									      HOSPES PUERTA DE ALCALA
+									    <span class="badge badge-primary badge-pill">4</span>
+									  </a>
+
+									  <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									      AC PALACIO DEL RETIRO
+									    <span class="badge badge-primary badge-pill">6</span>
+									  </a>
+
+									  <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									      WESTIN PALACE
+									    <span class="badge badge-primary badge-pill">3</span>
+									  </a>
+									</div>
 								</div>
 								
 								
@@ -114,20 +135,129 @@
 									<div class="img-circle"><img src="img/barcelona.jpg"></div>
 									<h1 class="mb-0">BARCELONA</h1>
 									<img class="mb-3" src="img/byvicci.png">
-									<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+									<p>Barcelona, la capital cosmopolita de la región de Cataluña en España, es conocida por su arte y arquitectura. La fantástica iglesia de la Sagrada Familia y otros hitos modernistas diseñados por Antoni Gaudí adornan la ciudad. El Museo Picasso y la Fundación Joan Miró muestran el arte moderno de los artistas que dan origen a sus nombres. El Museo de Historia de Barcelona (MUHBA) incluye varios sitios arqueológicos romanos.</p>
 								</div>
 								<div class="dialog-content">
 									<p>Elige tu hotel:</p>
-									<ul class="list-group">
-									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									<ul class="list-group hotel-list">
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    MANDARÍN ORIENTAL
+									    <span class="badge badge-primary badge-pill">14</span>
+									  </li>
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    MERCER BARCELONA
+									    <span class="badge badge-primary badge-pill">2</span>
+									  </li>
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    FAIRMONT JUAN CARLOS 1
+									    <span class="badge badge-primary badge-pill">1</span>
+									  </li>
+									   <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    ARTS BARCELONA
+									    <span class="badge badge-primary badge-pill">1</span>
+									  </li>
+									   <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    HILTON DIAGONAL
+									    <span class="badge badge-primary badge-pill">1</span>
+									  </li>
+									   <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    COTTON HOUSE
+									    <span class="badge badge-primary badge-pill">1</span>
+									  </li>
+									   <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    RENAISSANCE
+									    <span class="badge badge-primary badge-pill">1</span>
+									  </li>
+									</ul>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div><!-- morph-button -->
+
+				</div>
+
+				<div class="col-md-4">
+				<div class="morph-button morph-button-overlay morph-button-fixed morph-button-rounded">
+					<button type="button" style="background-image:url('img/marbella.jpg');"><div>Marbella</div></button>
+					<div class="morph-content">
+						<div class="bg-overlay" style="background-image:url('img/marbella.jpg');"></div>
+						<div>
+							<div class="morph-dialog-content city-dialog">
+								<span class="icon icon-close"><i class="material-icons">close</i></span>
+								<div class="dialog-aside">
+									<div class="img-circle"><img src="img/marbella.jpg"></div>
+									<h1 class="mb-0">Marbella</h1>
+									<img class="mb-3" src="img/byvicci.png">
+									<p>Marbella es una ciudad y un balneario de la Costa del Sol, en el sur de España, que pertenece a la región de Andalucía. Las montañas de la Sierra Blanca son el telón de fondo de los 27 km de playas de arena en el Mediterráneo, villas, hoteles y campos de golf. Al oeste de la ciudad de Marbella, la Milla Dorada deprestigiosos clubes nocturnos y haciendas costeras llega al puerto deportivo Banús, lleno de yates lujosos y rodeado de tiendas de moda elegantes y bares.</p>
+								</div>
+
+								<div class="dialog-content">
+									<p>Elige tu hotel:</p>
+									<ul class="list-group hotel-list">
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    HOTEL FUERTE MARBELLA
+									    <span class="badge badge-primary badge-pill">14</span>
+									  </li>
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    PUENTE ROMANO
+									    <span class="badge badge-primary badge-pill">2</span>
+									  </li>
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    THE OASIS by Don Carlos Resort
+									    <span class="badge badge-primary badge-pill">1</span>
+									  </li>
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    MARBELLA CLUB
+									    <span class="badge badge-primary badge-pill">1</span>
+									  </li>
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    VILLA PADIERNA Hotels & Resort
+									    <span class="badge badge-primary badge-pill">1</span>
+									  </li>
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+									    GRAN MELIÁ Don Pepe
+									    <span class="badge badge-primary badge-pill">1</span>
+									  </li>
+									</ul>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div><!-- morph-button -->
+
+				</div>
+
+				<div class="col-md-4">
+				<div class="morph-button morph-button-overlay morph-button-fixed morph-button-rounded">
+					<button type="button" style="background-image:url('img/newyork.jpg');"><div>New York</div></button>
+					<div class="morph-content">
+						<div class="bg-overlay" style="background-image:url('img/newyork.jpg');"></div>
+						<div>
+							<div class="morph-dialog-content city-dialog">
+								<span class="icon icon-close"><i class="material-icons">close</i></span>
+								<div class="dialog-aside">
+									<div class="img-circle"><img src="img/newyork.jpg"></div>
+									<h1 class="mb-0">New York</h1>
+									<img class="mb-3" src="img/byvicci.png">
+									<p>Nueva York incluye 5 distritos que se ubican donde el río Hudson desemboca en el océano Atlántico. En su centro se encuentra Manhattan, un distrito densamente poblado que se encuentra entre los principales centros comerciales, financieros y culturales del mundo. Sus sitios icónicos incluyen rascacielos, como el Empire State Building, y el amplio Central Park. El teatro Broadway se ubica en la zona del Times Square iluminada con neones.</p>
+								</div>
+								<div class="dialog-content">
+									<p>Elige tu hotel:</p>
+									<ul class="list-group hotel-list">
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
 									    Cras justo odio
 									    <span class="badge badge-primary badge-pill">14</span>
 									  </li>
-									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
 									    Dapibus ac facilisis in
 									    <span class="badge badge-primary badge-pill">2</span>
 									  </li>
-									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
 									    Morbi leo risus
 									    <span class="badge badge-primary badge-pill">1</span>
 									  </li>
@@ -144,30 +274,30 @@
 
 				<div class="col-md-4">
 				<div class="morph-button morph-button-overlay morph-button-fixed morph-button-rounded">
-					<button type="button" style="background-image:url('img/madrid.jpg');"><div>Madrid</div></button>
+					<button type="button" style="background-image:url('img/amsterdam.jpg');"><div>Amsterdam</div></button>
 					<div class="morph-content">
-						<div class="bg-overlay" style="background-image:url('img/madrid.jpg');"></div>
+						<div class="bg-overlay" style="background-image:url('img/amsterdam.jpg');"></div>
 						<div>
 							<div class="morph-dialog-content city-dialog">
 								<span class="icon icon-close"><i class="material-icons">close</i></span>
 								<div class="dialog-aside">
-									<div class="img-circle"><img src="img/madrid.jpg"></div>
-									<h1 class="mb-0">Madrid</h1>
+									<div class="img-circle"><img src="img/amsterdam.jpg"></div>
+									<h1 class="mb-0">Amsterdam</h1>
 									<img class="mb-3" src="img/byvicci.png">
-									<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+									<p>Amsterdam es la capital de los Países Bajos, conocida por su patrimonio artístico, su elaborado sistema de canales y sus casas angostas con fachadas de dos aguas, herencias de la Edad de Oro de la ciudad durante el siglo XVII. El Distrito de Museos alberga el Museo van Gogh, obras de Rembrandt y Vermeer en el Rijksmuseum, y arte moderno en el Museo Stedelijk. El ciclismo es clave en la identidad de la ciudad y existen varios senderos para practicarlo.</p>
 								</div>
 								<div class="dialog-content">
 									<p>Elige tu hotel:</p>
 									<ul class="list-group">
-									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
 									    Cras justo odio
 									    <span class="badge badge-primary badge-pill">14</span>
 									  </li>
-									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
 									    Dapibus ac facilisis in
 									    <span class="badge badge-primary badge-pill">2</span>
 									  </li>
-									  <li class="list-group-item d-flex justify-content-between align-items-center">
+									  <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
 									    Morbi leo risus
 									    <span class="badge badge-primary badge-pill">1</span>
 									  </li>
