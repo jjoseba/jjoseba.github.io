@@ -1,0 +1,134 @@
+h1,h2,h3,h4{
+	font-family: 'Dosis', sans-serif;
+	
+	
+}
+
+.img-circle{
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    text-align:center;
+    border-radius: 50%;
+    background-color:#ddd;
+}
+.img-circle.small{
+    width:90px;
+    height:90px;
+}
+.img-circle img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.dialog-aside{
+	position: relative;
+	width: 100%;
+	padding-top: 240px;
+}
+.dialog-aside .img-circle{
+	position: absolute;
+	top:-10px;
+	left:35px;
+	height: 210px;
+	width: 210px;
+}
+
+.city-dialog h1{
+	    font-size: 3.1125rem;
+	    text-transform: uppercase;
+	    letter-spacing: 0.1em;
+}
+
+@media (min-width: 720px){
+	.dialog-aside{
+		position: absolute;
+		left: 50px;
+		width: 280px;
+	}
+	.city-dialog{
+		padding-left: 400px;
+	}
+	.city-dialog .dialog-content{
+		padding-top:120px;
+		padding-left: 20px;
+	}
+}
+
+#main-content{ margin-top: 3.5rem; }
+.jumbo-header{
+	padding:13vh 0 15vh 0;
+	background-color: #adadad;
+	background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    color:#fff;
+	    text-shadow: 0 0 15px #000, 0 0 15px #000;
+}
+#mainmenu{
+	background-color: #361f17;
+	font-family: 'Dosis', sans-serif;
+	z-index: 2500;
+}
+#mainmenu .nav-link, #mainmenu .navbar-toggler{
+	color:#bd8d1a;
+	z-index: 100;
+}
+#mainmenu .navbar-brand img{
+	max-height: 100%;
+}
+#mainmenu .collapse-brand{ display: none; }
+@media (max-width: 992px){
+
+	.navbar-collapse {
+		background-color: #361f17;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    background-image: url('bg_leather.jpg');
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+
+	}
+	.navbar-collapse.collapse, .navbar-collapse.collapsing{
+		opacity: 0;
+		transition: opacity 0.5s, height 0.1s 0.5s;
+	}
+	.navbar-collapse.collapse.show {
+	    height: 100vh;
+	    opacity: 1;
+	    transition: opacity 0.5s, height 0.01s;
+	}
+	.nav-item{
+		width:100%;
+		text-align: center;
+	}
+	.nav-item .nav-link{ padding: 3em 0;     font-size: 1.4rem;}
+	.navbar-nav {
+	    height: 100vh;
+	    font-size: 1.8em;
+	    width: 100%;
+	    top:50%;
+	    padding:12rem 0 7rem 0;
+	    position: absolute;
+	    margin-top:-50vh !important;
+	}
+	#mainmenu a.collapse-brand{ 
+		display: block;
+		cursor: pointer;
+		z-index: 100;
+		margin:auto; 
+		position: absolute;
+		top:10%;
+		width: 100%;
+		text-align: center;
+	}
+	#mainmenu .collapse-brand img{
+		width: 80%;
+		max-width: 250px;
+	}
+}
