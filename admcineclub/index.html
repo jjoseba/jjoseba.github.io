@@ -16,10 +16,10 @@
     <style type="text/css">
       .slide{
         width:80vw;
-        height: 40vh;
-        background-color: #fff;
+        height: 50vw;
         margin: 10px;
         position: relative;
+        outline: none;
       }
       .slide img{
         position: absolute;
@@ -30,7 +30,7 @@
         backface-visibility: hidden;
         transform-style: preserve3d;
         transition: all 0.6s;
-        
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
       }
 
       .slide img.hint{
@@ -64,15 +64,30 @@
   <h3> Temporada 1 </h3>
 </div>
  <div class="slides">
+
   <div class="slide">
     <img src="slides/cineclub1-promo.jpg" class="hint" alt="ADM Cineclub #1">
     <img src="slides/cineclub1-final.jpg" class="solution" alt="ADM Cineclub #1">
   </div>
-  <div class="slide">your content</div>
-  <div class="slide">your content</div>
-  <div class="slide">your content</div>
+
+  <div class="slide">
+    <img src="slides/cineclub2-promo.jpg" class="hint" alt="ADM Cineclub #1">
+    <img src="slides/cineclub2-final.jpg" class="solution" alt="ADM Cineclub #1">
+  </div>
+
+  <div class="slide">
+    <img src="slides/cineclub3-promo.jpg" class="hint" alt="ADM Cineclub #1">
+    <img src="slides/cineclub3-final.jpg" class="solution" alt="ADM Cineclub #1">
+  </div>
+
+  <div class="slide">
+    <img src="slides/cineclub4-promo.jpg" class="hint" alt="ADM Cineclub #1">
+    <img src="slides/cineclub4-final.jpg" class="solution" alt="ADM Cineclub #1">
+  </div>
+
 </div>
 
+<br><br><br>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

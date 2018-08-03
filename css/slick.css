@@ -193,3 +193,5 @@
     opacity: .75;
     color: black;
 }
+.slick-slide { opacity: 0.6; }
+.slick-slide.slick-current{ opacity: 1; }
